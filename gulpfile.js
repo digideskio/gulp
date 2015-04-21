@@ -4,7 +4,6 @@
 var path         = require('path');
 var gulp         = require('gulp');
 var stylus       = require('gulp-stylus');
-var rev          = require('gulp-rev');
 var gutil        = require('gulp-util');
 var browserify   = require('browserify');
 var watchify     = require('watchify');
@@ -12,9 +11,6 @@ var source       = require('vinyl-source-stream');
 var buffer       = require('vinyl-buffer');
 var autoprefixer = require('gulp-autoprefixer');
 var csso         = require('gulp-csso');
-var uglify       = require('gulp-uglify');
-var rename       = require('gulp-rename');
-var fs           = require('fs');
 
 var setup = {
   js: {
