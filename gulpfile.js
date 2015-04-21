@@ -12,6 +12,11 @@ var buffer       = require('vinyl-buffer');
 var autoprefixer = require('gulp-autoprefixer');
 var csso         = require('gulp-csso');
 
+/**
+ * Setup for your files and directories.
+ * src — source-file
+ * dest — destination directory
+ */
 var setup = {
   js: {
     src: './src/js/app.js',
