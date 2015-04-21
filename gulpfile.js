@@ -34,11 +34,6 @@ var setup = {
 gulp.task('default', ['watchify', 'js', 'css', 'css:watch']);
 
 /**
- * Task to build frontend for production
- */
-gulp.task('build', ['js', 'css', 'images', 'manifest']);
-
-/**
  * What to use: watchify or just browserify?
  * @type {bool}
  */
