@@ -1,0 +1,30 @@
+{
+  "name": "gulp-basic",
+  "version": "0.1.0",
+  "description": "Rambler's basic gulpfile sketch with watchify and stylus",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "npm i; gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:rambler-digital-solutions/gulp.git"
+  },
+  "author": "Anton Shuvalov anton@shuvalov.info",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rambler-digital-solutions/gulp/issues"
+  },
+  "homepage": "https://github.com/rambler-digital-solutions/gulp",
+  "devDependencies": {
+    "browserify": "^9.0.8",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-stylus": "^2.0.1",
+    "gulp-util": "^3.0.4",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.1.2"
+  }
+}
