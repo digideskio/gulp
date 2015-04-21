@@ -4,7 +4,7 @@
   "description": "Rambler's basic gulpfile sketch with watchify and stylus",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "npm i; gulp"
+    "start": "mkdir -p ./dest/; npm i; gulp"
   },
   "repository": {
     "type": "git",
