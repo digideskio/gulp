@@ -15,11 +15,11 @@ var csso         = require('gulp-csso');
 var setup = {
   js: {
     src: './src/js/app.js',
-    dest: './src/app.js'
+    dest: './dest/'
   },
   css: {
     src: './src/stylus/app.styl',
-    dest: './dest/app.css'
+    dest: './dest/'
   }
 };
 
@@ -59,9 +59,9 @@ gulp.task('js', function(done) {
   function bundle() {
     return bundler.bundle()
       .on('error', gutil.log.bind(gutil, 'browserify error'))
-      .pipe(source(path.basename(setup.js.dest)))
+      .pipe(source('app.js'))
       .pipe(buffer())
-      .pipe(gulp.dest(path.dirname(setup.js.dest)))
+      .pipe(gulp.dest(setup.js.dest))
     ;
   }
   return bundle();
@@ -86,5 +86,5 @@ gulp.task('css', function() {
  * @return {undefined}
  */
 gulp.task('css:watch', function() {
-  gulp.watch(path.dirname(setup.css.src) + '**/*.styl', ['css']);
+  gulp.watch(setup.css.src + '**/*.styl', ['css']);
 });
